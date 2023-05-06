@@ -1,0 +1,37 @@
+# Simple chatbot using the Python
+
+import time
+var_time = time.ctime()
+
+qna = {
+    "Hi" : "Hello",
+    "hi" : "Hello",
+    "Hello" : "Hi",
+    "hello" : "Hi",
+    "Hey" : "wassup",
+    "hey" : "wassup",
+    "what is your name" : "My name is ChatBot",
+    "What is your name" : "My name is ChatBot",
+    "how are you" : "I'am Fine, what about you",
+    "How are you" : "I'am Fine, what about you",
+    "I am fine" : "Ok",
+    "i am fine" : "Ok",
+    "Fine" : "Ok",
+    "fine" : "Ok",
+    "what is the time now" : var_time,
+    "Bye" : "See you later",
+    "bye" : "See you later",s
+    "ok" : "See you later",
+    "Ok" : "See you later",
+    
+}
+
+while True:
+    qs = input()
+    if(qs == "quit"):
+        break
+    else:
+        print(qna[qs])
+
+
+
